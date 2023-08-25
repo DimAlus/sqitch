@@ -179,6 +179,7 @@ has pager => (
 sub go {
     my $class = shift;
     my @args = @ARGV;
+    print 'args: ', \@args, ' class: ', $class;
 
     # 1. Parse core options.
     my $opts = $class->_parse_core_opts(\@args);
